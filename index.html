@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: red;
+        }
+
+        #num1{
+            font-size: 30px;
+            border-radius: 10px;
+            border: 2px solid rgb(50, 2, 94);
+        }
+        #num2{
+            font-size: 30px;
+            border-radius: 10px;
+            border: 2px solid rgb(50, 2, 94);
+        }
+        button{
+            background-color: green;
+            border: 2px solid yellow;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+        #ans1{
+            font-size: 30px;
+        }
+        #label1{
+            font-size: 30px;
+        }
+        #label2{
+            font-size: 30px;
+        }
+        #label3{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div style="font-size: 50px; justify-content: center; text-align: center;"><u>Area of Triangle</u></div>
+        <div style="text-align: center; padding-top: 50px;">
+            
+            <label for="num1" id="label1">Enter the base of the Triangle</label>
+            <input type="number" id="num1" >
+
+            <br><br>
+
+            <label for="num2" id="label2">Enter the height of the Triangle</label>
+            <input type="number" id="num2">
+            
+
+            <br><br>
+
+            <button onclick="art()">Calculate</button>
+
+            <br><br>
+            
+            
+            <label for="ans1" id="label3" >The Area of Triangle is</label>
+            <p id="ans1"></p>
+           
+        </div>
+    </div>
+
+    <script>
+        function art() {
+            var a,b,area;
+             a=Number(document.getElementById("num1").value);
+             b=Number(document.getElementById("num2").value);
+             area = (a * b)/2;
+            document.getElementById("ans1").innerHTML=area;
+            
+        }
+    </script>
+
+</body>
+</html>
